@@ -1,5 +1,3 @@
-package main;
-
 public class StringUtils {
 
 	public boolean isValidZipCode(String zipCode) {
@@ -9,11 +7,11 @@ public class StringUtils {
 		
 		String[] numbers = zipCode.split("-");
 		
-		if (numbers.length != 2) {
+		if (numbers.length != 2) {					// dlugosc wlasciwosci tablicy
 			return false;
 		}
 		
-		if (numbers[0].length() != 2) {
+		if (numbers[0].length() != 2) {				// dlugosc stringa
 			return false;
 		}
 		
